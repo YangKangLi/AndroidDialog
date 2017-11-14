@@ -47,11 +47,11 @@ public class DialogAgent {
     /**
      * 设置对话框显示的内容
      *
-     * @param contextText
+     * @param contentText
      * @return
      */
-    public DialogAgent setContent(String contextText) {
-        mLibDialog.setContent(contextText);
+    public DialogAgent setContent(String contentText) {
+        mLibDialog.setContent(contentText);
         return this;
     }
 

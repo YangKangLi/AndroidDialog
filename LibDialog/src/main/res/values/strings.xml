@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LibDialog</string>
+
+    <!-- 弹出对话框使用的字符串资源 -->
+    <string name="positive_btn_text">确 定</string>
+    <string name="negative_btn_text">取消</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 对话框布局开始 -->
+    <LinearLayout style="@style/LibDialog.Container">
+
+        <!-- 第一部分：内容 -->
+        <LinearLayout
+            android:id="@+id/layout_content_container"
+            style="@style/LibDialog.ContentContainer">
+
+            <!-- 显示内容控件 -->
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/LibDialog.Content"
+                tools:text="确定要删除这条信息吗？" />
+
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            style="@style/OnePxHeightDividerLine"
+            android:background="@color/dialog_divider_line_color" />
+
+        <!-- 第二部分：底部按钮 -->
+        <LinearLayout style="@style/LibDialog.BtnContainer">
+
+            <Button
+                android:id="@+id/btn_positive"
+                style="@style/LibDialog.Btn.Left"
+                android:text="@string/positive_btn_text" />
+
+            <View
+                style="@style/OnePxWidthDividerLine"
+                android:background="@color/dialog_divider_line_color" />
+
+            <Button
+                android:id="@+id/btn_negative"
+                style="@style/LibDialog.Btn.Right"
+                android:text="@string/negative_btn_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <color name="dialog_background_color">#FFFFFF</color>
+    <color name="dialog_content_text_color">#000000</color>
+    <color name="dialog_button_text_color">#5D9BCA</color>
+    <color name="dialog_button_pressed_text_color">#62ACE4</color>
+    <color name="dialog_btn_background_color">@android:color/transparent</color>
+    <color name="dialog_btn_pressed_background_color">#22DAD3D3</color>
+    <color name="dialog_divider_line_color">#229c9797</color>
+</resources>

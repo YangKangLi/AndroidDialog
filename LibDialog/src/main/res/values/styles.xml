@@ -1,0 +1,124 @@
+<resources>
+
+
+    <!-- 一个像素宽度的竖线 -->
+    <style name="OnePxWidthDividerLine">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 一个像素高度的横线 -->
+    <style name="OnePxHeightDividerLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+
+    <!-- ####################################################################################### -->
+    <!-- Dialog相关的样式定义  -->
+    <!-- ####################################################################################### -->
+
+    <!-- 和系统有关的对话框样式定义 -->
+    <style name="BaseDialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 和系统有关的对话框样式定义 -->
+    <style name="ProgressDialogStyle" parent="BaseDialogStyle">
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- 对话框的基础样式 -->
+    <style name="LibDialog">
+
+    </style>
+
+    <!-- 对话框的容器样式 -->
+    <style name="LibDialog.Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/dialog_horizontal_margin</item>
+        <item name="android:background">@drawable/lib_dialog_background</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LibDialog.Container.Waiting">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/lib_dialog_waiting_background</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <!-- 对话框的内容容器样式 -->
+    <style name="LibDialog.ContentContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">@dimen/dialog_min_width</item>
+        <item name="android:minHeight">@dimen/dialog_min_height</item>
+    </style>
+
+    <!-- 对话框内容显示控件样式 -->
+    <style name="LibDialog.Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dialog_content_padding</item>
+        <item name="android:textColor">@color/dialog_content_text_color</item>
+        <item name="android:textSize">@dimen/dialog_content_text_size</item>
+    </style>
+
+    <style name="LibDialog.Content.Waiting">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">@dimen/dialog_waiting_content_text_size</item>
+    </style>
+
+    <!-- 对话框底部按钮容器样式 -->
+    <style name="LibDialog.BtnContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 对话框按钮的基础样式 -->
+    <style name="LibDialog.Btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dialog_btn_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dialog_button_text_color</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 一行只有一个按钮的样式 -->
+    <style name="LibDialog.Btn.Single">
+        <item name="android:background">@drawable/lib_dialog_single_btn_background</item>
+    </style>
+
+    <!-- 一行有两个按钮：左边按钮的样式 -->
+    <style name="LibDialog.Btn.Left">
+        <item name="android:background">@drawable/lib_dialog_left_btn_background</item>
+    </style>
+
+    <!-- 一行有两个按钮：右边按钮的样式 -->
+    <style name="LibDialog.Btn.Right">
+        <item name="android:background">@drawable/lib_dialog_right_btn_background</item>
+    </style>
+</resources>
